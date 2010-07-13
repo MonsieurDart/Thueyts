@@ -13,26 +13,62 @@
 @implementation MainViewController
 
 
-@synthesize gameRunning, timer, startDate;
+@synthesize gameRunning, gameInYgoMode, timer, startDate;
 @synthesize startStopButton, timerButton;
 @synthesize myLife, myLifeView, myLifeRvView, myLifeRvLabel;
+@synthesize myLifeButton, myLifeRvButton;
 @synthesize opLife, opLifeView, opLifeRvView, opLifeRvLabel;
+@synthesize opLifeButton, opLifeRvButton;
+@synthesize customScoreView, customScoreMyTextField, customScoreOpTextField;
 
 
 #pragma mark -
-#pragma mark - View Setup
+#pragma mark - View & Game Setup
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
-    self.myLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
-    self.opLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
+    myLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
+    opLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
     
-    self.myLifeRvLabel.transform = CGAffineTransformMakeRotation(M_PI);
-    self.opLifeRvLabel.transform = CGAffineTransformMakeRotation(M_PI);
+    myLifeRvLabel.transform = CGAffineTransformMakeRotation(M_PI);
+    opLifeRvLabel.transform = CGAffineTransformMakeRotation(M_PI);
     
+    // Add the actions to the gestured capable button.
+    [myLifeButton addAction:@selector(increaseMyLife:)          forControlEvent:GXGesturedButtonEventTapHalfUp];
+    [myLifeButton addAction:@selector(decreaseMyLife:)          forControlEvent:GXGesturedButtonEventTapHalfDown];
+    [myLifeButton addAction:@selector(increaseMyLifeLarge:)     forControlEvent:GXGesturedButtonEventSwipeUp];
+    [myLifeButton addAction:@selector(decreaseMyLifeLarge:)     forControlEvent:GXGesturedButtonEventSwipeDown];
+    [myLifeButton addAction:@selector(doubleMyLife:)            forControlEvent:GXGesturedButtonEventSwipeRight];
+    [myLifeButton addAction:@selector(halveMyLife:)             forControlEvent:GXGesturedButtonEventSwipeLeft];
+    [myLifeButton addAction:@selector(showCustomMyScoreView:)   forControlEvent:GXGesturedButtonEventTapTwoFingers];
+  
+    [opLifeButton addAction:@selector(increaseOpLife:)          forControlEvent:GXGesturedButtonEventTapHalfUp];
+    [opLifeButton addAction:@selector(decreaseOpLife:)          forControlEvent:GXGesturedButtonEventTapHalfDown];
+    [opLifeButton addAction:@selector(increaseOpLifeLarge:)     forControlEvent:GXGesturedButtonEventSwipeUp];
+    [opLifeButton addAction:@selector(decreaseOpLifeLarge:)     forControlEvent:GXGesturedButtonEventSwipeDown];
+    [opLifeButton addAction:@selector(doubleOpLife:)            forControlEvent:GXGesturedButtonEventSwipeRight];
+    [opLifeButton addAction:@selector(halveOpLife:)             forControlEvent:GXGesturedButtonEventSwipeLeft];
+    [opLifeButton addAction:@selector(showCustomOpScoreView:)   forControlEvent:GXGesturedButtonEventTapTwoFingers];
+
+    [myLifeRvButton addAction:@selector(decreaseMyLife:)        forControlEvent:GXGesturedButtonEventTapHalfUp];
+    [myLifeRvButton addAction:@selector(increaseMyLife:)        forControlEvent:GXGesturedButtonEventTapHalfDown];
+    [myLifeRvButton addAction:@selector(decreaseMyLifeLarge:)   forControlEvent:GXGesturedButtonEventSwipeUp];
+    [myLifeRvButton addAction:@selector(increaseMyLifeLarge:)   forControlEvent:GXGesturedButtonEventSwipeDown];
+    [myLifeRvButton addAction:@selector(doubleMyLife:)          forControlEvent:GXGesturedButtonEventSwipeLeft];
+    [myLifeRvButton addAction:@selector(halveMyLife:)           forControlEvent:GXGesturedButtonEventSwipeRight];
+    [myLifeRvButton addAction:@selector(showCustomMyScoreView:) forControlEvent:GXGesturedButtonEventTapTwoFingers];
+
+    [opLifeRvButton addAction:@selector(decreaseOpLife:)        forControlEvent:GXGesturedButtonEventTapHalfUp];
+    [opLifeRvButton addAction:@selector(increaseOpLife:)        forControlEvent:GXGesturedButtonEventTapHalfDown];
+    [opLifeRvButton addAction:@selector(decreaseOpLifeLarge:)   forControlEvent:GXGesturedButtonEventSwipeUp];
+    [opLifeRvButton addAction:@selector(increaseOpLifeLarge:)   forControlEvent:GXGesturedButtonEventSwipeDown];
+    [opLifeRvButton addAction:@selector(doubleOpLife:)          forControlEvent:GXGesturedButtonEventSwipeLeft];
+    [opLifeRvButton addAction:@selector(halveOpLife:)           forControlEvent:GXGesturedButtonEventSwipeRight];
+    [opLifeRvButton addAction:@selector(showCustomOpScoreView:) forControlEvent:GXGesturedButtonEventTapTwoFingers];
+
     self.gameRunning = NO;
     [self resetGameState];
 }
@@ -46,10 +82,31 @@
 
 - (void)resetGameState {
     
-    self.myLife = 20;
-    self.opLife = 20;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:YGO_MODE_KEY]) {
+        // YGO mode.
+        self.myLife = 8000;
+        self.opLife = 8000;
+        lifeIncrement = 100;
+        lifeIncrementLarge = 1000;
+        gameInYgoMode = YES;
+    }
+    else {
+        // Magic mode.
+        self.myLife = 20;
+        self.opLife = 20;
+        lifeIncrement = 1;
+        lifeIncrementLarge = 5;
+        gameInYgoMode = NO;
+    }
+
     self.startDate = [NSDate date];
     [self updateTimerView];
+}
+
+
+// Start the game if it is not running.
+- (void)checkGameStarted {
+    if (!self.gameRunning) [self startStopGame];
 }
 
 
@@ -74,26 +131,74 @@
 
 
 - (IBAction)increaseMyLife:(id)sender {
-    if (!self.gameRunning) [self startStopGame];
-	self.myLife++;
+    [self checkGameStarted];
+    self.myLife += lifeIncrement;
+}
+
+- (IBAction)decreaseMyLife:(id)sender {
+    [self checkGameStarted];
+    self.myLife -= lifeIncrement;
+}
+
+- (IBAction)increaseMyLifeLarge:(id)sender {
+    [self checkGameStarted];
+    self.myLife += lifeIncrementLarge;
+}
+
+- (IBAction)decreaseMyLifeLarge:(id)sender {
+    [self checkGameStarted];
+    self.myLife -= lifeIncrementLarge;
+}
+
+- (IBAction)doubleMyLife:(id)sender {
+    [self checkGameStarted];
+    self.myLife *= 2;
+}
+
+- (IBAction)halveMyLife:(id)sender {
+    [self checkGameStarted];
+    self.myLife /= 2;
+}
+
+- (IBAction)customizeMyLife:(NSInteger)life {
+    [self checkGameStarted];
+    self.myLife = life;
 }
 
 
 - (IBAction)increaseOpLife:(id)sender {
-    if (!self.gameRunning) [self startStopGame];
-	self.opLife++;
+    [self checkGameStarted];
+    self.opLife += lifeIncrement;
 }
-
-
-- (IBAction)decreaseMyLife:(id)sender {
-    if (!self.gameRunning) [self startStopGame];
-	self.myLife--;
-}
-
 
 - (IBAction)decreaseOpLife:(id)sender {
-    if (!self.gameRunning) [self startStopGame];
-	self.opLife--;
+    [self checkGameStarted];
+    self.opLife -= lifeIncrement;
+}
+
+- (IBAction)increaseOpLifeLarge:(id)sender {
+    [self checkGameStarted];
+    self.opLife += lifeIncrementLarge;
+}
+
+- (IBAction)decreaseOpLifeLarge:(id)sender {
+    [self checkGameStarted];
+    self.opLife -= lifeIncrementLarge;
+}
+
+- (IBAction)doubleOpLife:(id)sender {
+    [self checkGameStarted];
+    self.opLife *= 2;
+}
+
+- (IBAction)halveOpLife:(id)sender {
+    [self checkGameStarted];
+    self.opLife /= 2;
+}
+
+- (IBAction)customizeOpLife:(NSInteger)life {
+    [self checkGameStarted];
+    self.opLife = life;
 }
 
 
@@ -164,7 +269,7 @@
 // prevent the device from going to sleep mode, if the game is running.
 - (void)setGameRunning:(BOOL)running {
     
-    if (running == gameRunning) return;
+//    if (running == gameRunning) return;
     
 	gameRunning = running;
     
@@ -232,6 +337,76 @@
 
 
 #pragma mark -
+#pragma mark - Custom Score View Ctlr
+
+
+- (IBAction)showCustomScoreView:(id)sender {
+    
+    // Configure the labels with the current scores.
+    customScoreMyTextField.text = [NSString stringWithFormat:@"%d", myLife];
+    customScoreOpTextField.text = [NSString stringWithFormat:@"%d", opLife];
+    
+    // Show the view, with a dissolve animation.
+    customScoreView.alpha = 0.0;
+    [self.view addSubview:customScoreView];
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.4];
+    customScoreView.alpha = 1.0;
+    [UIView commitAnimations];
+}
+
+
+- (IBAction)showCustomMyScoreView:(id)sender {
+    
+    [self showCustomScoreView:self];
+    [customScoreMyTextField becomeFirstResponder];
+}
+
+
+- (IBAction)showCustomOpScoreView:(id)sender {
+    
+    [self showCustomScoreView:self];
+    [customScoreOpTextField becomeFirstResponder];
+}
+
+
+- (IBAction)hideCustomScoreView:(id)sender {
+    
+    // Hide the keyboard.
+    [customScoreMyTextField resignFirstResponder];
+    [customScoreOpTextField resignFirstResponder];
+    
+    // Hide the view, with a dissolve animation.
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.4];
+    [UIView setAnimationDelegate:customScoreView];
+    [UIView setAnimationDidStopSelector:@selector(removeFromSuperview)];
+    customScoreView.alpha = 0.0;
+    [UIView commitAnimations];
+}
+
+
+- (IBAction)validateCustomScoreView:(id)sender {
+
+    // Set the new scores, if different (to avoid the labels to wiggle).
+    NSInteger myLifeNew= [customScoreMyTextField.text integerValue];
+    if (myLifeNew != self.myLife) [self customizeMyLife:myLifeNew];
+    
+    NSInteger opLifeNew = [customScoreOpTextField.text integerValue];
+    if (opLifeNew != self.opLife) [self customizeOpLife:opLifeNew];
+    
+    [self hideCustomScoreView:self];
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [self validateCustomScoreView:self];    
+	return NO;
+}
+
+
+#pragma mark -
 #pragma mark - Info Panel
 
 
@@ -248,6 +423,11 @@
 
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
+    
+    // If the game mode configuration changed, reset the game state.
+    if (gameInYgoMode != [[NSUserDefaults standardUserDefaults] boolForKey:YGO_MODE_KEY]) {
+		self.gameRunning = NO;
+    }
     
 	[self dismissModalViewControllerAnimated:YES];
 }
@@ -275,11 +455,16 @@
     [timerButton release];
     
     [myLifeView release];
-    [myLifeRvView release];
-    [myLifeRvLabel release];
     [opLifeView release];
+    [myLifeRvView release];
     [opLifeRvView release];
+    [myLifeRvLabel release];
     [opLifeRvLabel release];
+    [myLifeButton release];
+    
+    [customScoreView release];
+    [customScoreMyTextField release];
+    [customScoreOpTextField release];
 }
 
 

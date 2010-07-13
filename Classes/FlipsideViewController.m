@@ -11,17 +11,25 @@
 
 @implementation FlipsideViewController
 
-@synthesize delegate;
+@synthesize delegate, ygoModeSwitch;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
+    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
+    ygoModeSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:YGO_MODE_KEY];
 }
 
 
 - (IBAction)done:(id)sender {
-	[self.delegate flipsideViewControllerDidFinish:self];	
+	[self.delegate flipsideViewControllerDidFinish:self];
+}
+
+
+- (IBAction)ygoModeChanged:(UISwitch *)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:sender.on forKey:YGO_MODE_KEY];
+    // This one should not be necessary, but it is easier for debug.
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 

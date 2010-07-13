@@ -22,6 +22,8 @@
 		4E01C20111D13336001DF924 /* App Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E01C20011D13336001DF924 /* App Background.png */; };
 		4E063A6311D3965900B10433 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E063A6211D3965900B10433 /* Icon.png */; };
 		4E063B3111D3C25700B10433 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E063B3011D3C25700B10433 /* QuartzCore.framework */; };
+		4E731C3811E75CB3002A162D /* GXGesturedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E731C3711E75CB3002A162D /* GXGesturedButton.m */; };
+		4E89523211ECC2E800B23D81 /* Flipside Dark Gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */; };
 		4EF915D911D4AF5100B30C1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF915D811D4AF5100B30C1F /* Default.png */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +35,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
@@ -46,6 +48,9 @@
 		4E01C20011D13336001DF924 /* App Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Background.png"; sourceTree = "<group>"; };
 		4E063A6211D3965900B10433 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4E063B3011D3C25700B10433 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4E731C3611E75CB3002A162D /* GXGesturedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXGesturedButton.h; sourceTree = "<group>"; };
+		4E731C3711E75CB3002A162D /* GXGesturedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXGesturedButton.m; sourceTree = "<group>"; };
+		4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flipside Dark Gradient.png"; sourceTree = "<group>"; };
 		4EF915D811D4AF5100B30C1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4EF915FD11D4B3C800B30C1F /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Thueyts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Thueyts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 			children = (
 				1D3623240D0F684500981E51 /* ThueytsAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ThueytsAppDelegate.m */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 			);
 			name = "Application Delegate";
 			path = Classes;
@@ -89,6 +95,7 @@
 			children = (
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 			);
 			name = "Flipside View";
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 			children = (
 				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+				280E754B0DD40C5E005A515E /* MainView.xib */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4E731C4111E75D8F002A162D /* Gesture */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -133,10 +142,8 @@
 				4E063A6211D3965900B10433 /* Icon.png */,
 				4E01C20011D13336001DF924 /* App Background.png */,
 				4E01C1D411D128FE001DF924 /* Button Background.png */,
+				4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */,
 				4E01C1D111D11C13001DF924 /* Life View Background.png */,
-				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
-				280E754B0DD40C5E005A515E /* MainView.xib */,
-				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Thueyts-Info.plist */,
 			);
 			name = Resources;
@@ -151,6 +158,15 @@
 				4E063B3011D3C25700B10433 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E731C4111E75D8F002A162D /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				4E731C3611E75CB3002A162D /* GXGesturedButton.h */,
+				4E731C3711E75CB3002A162D /* GXGesturedButton.m */,
+			);
+			name = Gesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +226,7 @@
 				4E01C20111D13336001DF924 /* App Background.png in Resources */,
 				4E063A6311D3965900B10433 /* Icon.png in Resources */,
 				4EF915D911D4AF5100B30C1F /* Default.png in Resources */,
+				4E89523211ECC2E800B23D81 /* Flipside Dark Gradient.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +241,7 @@
 				1D3623260D0F684500981E51 /* ThueytsAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
+				4E731C3811E75CB3002A162D /* GXGesturedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +258,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
 				PRODUCT_NAME = Thueyts;
 			};
@@ -253,6 +272,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
 				PRODUCT_NAME = Thueyts;
 				VALIDATE_PRODUCT = YES;
@@ -282,6 +302,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
 				PRODUCT_NAME = Thueyts;
 				VALIDATE_PRODUCT = YES;

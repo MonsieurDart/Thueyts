@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="47"/>
+			<integer value="40"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -45,27 +45,33 @@
 					<object class="IBUITextView" id="464447519">
 						<reference key="NSNextResponder" ref="249263867"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 44}, {320, 436}}</string>
+						<string key="NSFrame">{{12, 110}, {308, 370}}</string>
 						<reference key="NSSuperview" ref="249263867"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEgMAA</bytes>
 						</object>
+						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIShowsHorizontalScrollIndicator">NO</bool>
 						<bool key="IBUIEditable">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">ClRodWV5dHMgaXMgYSBzaW1wbGUgbGlmZSBwb2ludCBjb3VudGVyLiBXaGVyZWFzIG1vc3Qgb2YgdXMg
-dXNlIGl0IGZvciBNYWdpYyB0aGUgR2F0aGVyaW5n4oSiIChha2EgTXRHKSwgaXQgY2FuIGJlIHVzZWQg
-Zm9yIGFueSB0cmFkaW5nIGNhcmQgZ2FtZS4KClVzaW5nIFRodWV5dHMuIFRvIGluY3JlYXNlIGEgbGlm
-ZSBjb3VudCwganVzdCB0YXAgdGhlIHRvcCBoYWxmIHBhcnQgb2YgdGhlIGxpZmUgYnV0dG9uLiBUbyBk
-ZWNyZWFzZSBhIGxpZmUgY291bnRlciwgdGFwIHRoZSBib3R0b20gaGFsZiBvZiBpdC4gSXQgaXMgdGhh
-dCBzaW1wbGUhIAoKSWYgeW91IGhhdmUgc29tZSBpZGVhcyBvbiB3aGF0IHNob3VsZCBkbyBUaHVleXRz
-IG9yIGlmIHlvdSBmaW5kIGEgYnVnLCBmZWVsIGZyZWUgdG8gY29udGFjdCBtZSAoc2VlIGF0IHRoZSBl
-bmQgb2YgdGhpcyBwYWdlKSB0byByZXF1ZXN0IG5ldyBmZWF0dXJlcyBvciBidWcgZml4ZXMuCgpHb29k
-IGx1Y2shCgpNb3JlIGluZm8gYXQ6Cmh0dHA6Ly9tYXRoaWV1LmdvZGFydC5mcmVlLmZyCgpDb250YWN0
-OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
+						<string type="base64-UTF8" key="IBUIText">QWJvdXQgVGh1ZXl0czoKClRodWV5dHMgaXMgYSBsaWZlIHBvaW50IGNvdW50ZXIuIFdoZXJlYXMgbW9z
+dCBvZiB1cyB1c2UgaXQgZm9yIE1hZ2ljIHRoZSBHYXRoZXJpbmfihKIgKGFrYSBNdEcpLCBpdCBjYW4g
+YmUgdXNlZCBmb3IgWXUtR2ktT2ghIG9yIGFueSBvdGhlciB0cmFkaW5nIGNhcmQgZ2FtZS4KClVzaW5n
+IFRodWV5dHM6CgpUbyBpbmNyZWFzZSBhIGxpZmUgY291bnQsIGp1c3QgdGFwIHRoZSB0b3AgaGFsZiBw
+YXJ0IG9mIHRoZSBsaWZlIGJ1dHRvbi4gVG8gZGVjcmVhc2UgYSBsaWZlIGNvdW50ZXIsIHRhcCB0aGUg
+Ym90dG9tIGhhbGYgb2YgaXQuIEl0IGlzIHRoYXQgc2ltcGxlIQoKWW91IGNhbiBhbHNvIHVzZSBnZXN0
+dXJlcyB0byBjaGFuZ2UgdGhlIHNjb3Jlcy4gU3dpcGUgbGVmdCB0byBoYWx2ZSwgc3dpcGUgZG93biB0
+byBkZWNyZWFzZSBxdWlja2x5LCB0YXAgd2l0aCB0d28gZmluZ2VycyB0byBlbnRlciBhIGN1c3RvbWlz
+ZWQgbnVtYmVyLgoKQSBZdS1HaS1PaCEgKFlHTykgbW9kZSBpcyBhdmFpbGFibGUgYW5kIGFsbG93cyB5
+b3UgdG8gc3RhcnQgYXQgODAwMCBhbmQgYWRhcHQgdGhlIGxpZmUgbWFuYWdlbWVudCB0byB0aGlzIGdh
+bWUuCgpDb250YWN0OgoKSWYgeW91IGhhdmUgc29tZSBpZGVhcyBvbiB3aGF0IHNob3VsZCBkbyBUaHVl
+eXRzIG9yIGlmIHlvdSBmaW5kIGEgYnVnLCBmZWVsIGZyZWUgdG8gY29udGFjdCBtZSAoc2VlIGF0IHRo
+ZSBlbmQgb2YgdGhpcyBwYWdlKSB0byByZXF1ZXN0IG5ldyBmZWF0dXJlcyBvciBidWcgZml4ZXMuCgpN
+b3JlIGluZm8gYXQ6Cmh0dHA6Ly9tYXRoaWV1LmdvZGFydC5mcmVlLmZyCgpFbWFpbDoKbWF0aGlldS5n
+b2RhcnRAZ21haWwuY29tCgpHb29kIGx1Y2shCgo</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC42Nzg1NzE0NjI2IDAuNjc4NTcxNDYyNiAwLjY3ODU3MTQ2MjYAA</bytes>
@@ -100,15 +106,41 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 							</object>
 						</object>
 					</object>
+					<object class="IBUISwitch" id="48601126">
+						<reference key="NSNextResponder" ref="249263867"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{206, 68}, {94, 27}}</string>
+						<reference key="NSSuperview" ref="249263867"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+					</object>
+					<object class="IBUILabel" id="1054137955">
+						<reference key="NSNextResponder" ref="249263867"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{20, 71}, {178, 21}}</string>
+						<reference key="NSSuperview" ref="249263867"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<string key="IBUIText">Yu-Gi-Oh! Mode</string>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MQA</bytes>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">10</float>
+					</object>
 				</object>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MC4yNQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MC4xMjc1NDIyMjc1IDAuMTI4MDU0MDk3MyAwLjE0Mjg1NzEzNDMAA</bytes>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -132,6 +164,23 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">46</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">ygoModeChanged:</string>
+						<reference key="source" ref="48601126"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">ygoModeSwitch</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="48601126"/>
+					</object>
+					<int key="connectionID">53</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -161,6 +210,8 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="871675769"/>
 							<reference ref="464447519"/>
+							<reference ref="48601126"/>
+							<reference ref="1054137955"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -192,6 +243,16 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 						<reference key="object" ref="464447519"/>
 						<reference key="parent" ref="249263867"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">48</int>
+						<reference key="object" ref="48601126"/>
+						<reference key="parent" ref="249263867"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">49</int>
+						<reference key="object" ref="1054137955"/>
+						<reference key="parent" ref="249263867"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -202,16 +263,22 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 					<string>-2.CustomClassName</string>
 					<string>40.IBEditorWindowLastContentRect</string>
 					<string>40.IBPluginDependency</string>
+					<string>40.IBViewEditorWindowController.showingBoundsRectangles</string>
 					<string>42.IBPluginDependency</string>
 					<string>43.IBPluginDependency</string>
 					<string>44.IBPluginDependency</string>
 					<string>47.IBPluginDependency</string>
+					<string>48.IBPluginDependency</string>
+					<string>49.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>FlipsideViewController</string>
 					<string>UIResponder</string>
-					<string>{{630, 276}, {320, 480}}</string>
+					<string>{{848, 555}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<boolean value="YES"/>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -235,7 +302,7 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">47</int>
+			<int key="maxID">54</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -244,25 +311,67 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 					<string key="className">FlipsideViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">done:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>done:</string>
+							<string>ygoModeChanged:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>UISwitch</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">done:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">done:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>done:</string>
+							<string>ygoModeChanged:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">done:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">ygoModeChanged:</string>
+								<string key="candidateClassName">UISwitch</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">delegate</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>delegate</string>
+							<string>ygoModeSwitch</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>UISwitch</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">delegate</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">delegate</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>delegate</string>
+							<string>ygoModeSwitch</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">delegate</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">ygoModeSwitch</string>
+								<string key="candidateClassName">UISwitch</string>
+							</object>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -395,6 +504,22 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">UIControl</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UIControl.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UILabel</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UILabel.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">UINavigationBar</string>
 					<string key="superclassName">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="522138517">
@@ -434,6 +559,14 @@ OgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KA</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UISearchDisplayController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UISwitch</string>
+					<string key="superclassName">UIControl</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UISwitch.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
