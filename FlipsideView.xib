@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="40"/>
+			<integer value="47"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -65,13 +65,15 @@ YXJ0IG9mIHRoZSBsaWZlIGJ1dHRvbi4gVG8gZGVjcmVhc2UgYSBsaWZlIGNvdW50ZXIsIHRhcCB0aGUg
 Ym90dG9tIGhhbGYgb2YgaXQuIEl0IGlzIHRoYXQgc2ltcGxlIQoKWW91IGNhbiBhbHNvIHVzZSBnZXN0
 dXJlcyB0byBjaGFuZ2UgdGhlIHNjb3Jlcy4gU3dpcGUgbGVmdCB0byBoYWx2ZSwgc3dpcGUgZG93biB0
 byBkZWNyZWFzZSBxdWlja2x5LCB0YXAgd2l0aCB0d28gZmluZ2VycyB0byBlbnRlciBhIGN1c3RvbWlz
-ZWQgbnVtYmVyLgoKQSBZdS1HaS1PaCEgKFlHTykgbW9kZSBpcyBhdmFpbGFibGUgYW5kIGFsbG93cyB5
-b3UgdG8gc3RhcnQgYXQgODAwMCBhbmQgYWRhcHQgdGhlIGxpZmUgbWFuYWdlbWVudCB0byB0aGlzIGdh
-bWUuCgpDb250YWN0OgoKSWYgeW91IGhhdmUgc29tZSBpZGVhcyBvbiB3aGF0IHNob3VsZCBkbyBUaHVl
-eXRzIG9yIGlmIHlvdSBmaW5kIGEgYnVnLCBmZWVsIGZyZWUgdG8gY29udGFjdCBtZSAoc2VlIGF0IHRo
-ZSBlbmQgb2YgdGhpcyBwYWdlKSB0byByZXF1ZXN0IG5ldyBmZWF0dXJlcyBvciBidWcgZml4ZXMuCgpN
-b3JlIGluZm8gYXQ6Cmh0dHA6Ly9tYXRoaWV1LmdvZGFydC5mcmVlLmZyCgpFbWFpbDoKbWF0aGlldS5n
-b2RhcnRAZ21haWwuY29tCgpHb29kIGx1Y2shCgo</string>
+ZWQgbnVtYmVyLgoK77+8QSBZdS1HaS1PaCEgKFlHTykgbW9kZSBpcyBhdmFpbGFibGUgYW5kIGFsbG93
+cyB5b3UgdG8gc3RhcnQgYXQgODAwMCBhbmQgYWRhcHQgdGhlIGxpZmUgbWFuYWdlbWVudCB0byB0aGlz
+IGdhbWUgKG9uZSBmaW5nZXIgdGFwIGluY3JlbWVudHMgb3IgZGVjcmVtZW50cyBieSAxMDAsIHN3aXBl
+IGRvd24gaW5jcmVtZW50cyBvciBkZWNyZW1lbnRzIGJ5IDEwMDApLg0KCkNvbnRhY3Q6CgpJZiB5b3Ug
+aGF2ZSBzb21lIGlkZWFzIG9uIHdoYXQgc2hvdWxkIGRvIFRodWV5dHMgb3IgaWYgeW91IGZpbmQgYSBi
+dWcsIGZlZWwgZnJlZSB0byBjb250YWN0IG1lIChzZWUgYXQgdGhlIGVuZCBvZiB0aGlzIHBhZ2UpIHRv
+IHJlcXVlc3QgbmV3IGZlYXR1cmVzIG9yIGJ1ZyBmaXhlcy4KCk1vcmUgaW5mbyBhdDoKaHR0cDovL21h
+dGhpZXUuZ29kYXJ0LmZyZWUuZnIKCkVtYWlsOgptYXRoaWV1LmdvZGFydEBnbWFpbC5jb20KCkdvb2Qg
+bHVjayEKCg</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC42Nzg1NzE0NjI2IDAuNjc4NTcxNDYyNiAwLjY3ODU3MTQ2MjYAA</bytes>

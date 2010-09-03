@@ -23,7 +23,10 @@
 		4E063A6311D3965900B10433 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E063A6211D3965900B10433 /* Icon.png */; };
 		4E063B3111D3C25700B10433 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E063B3011D3C25700B10433 /* QuartzCore.framework */; };
 		4E731C3811E75CB3002A162D /* GXGesturedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E731C3711E75CB3002A162D /* GXGesturedButton.m */; };
-		4E89523211ECC2E800B23D81 /* Flipside Dark Gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */; };
+		4EC80FBB1230FA8C004C991E /* Button Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC80FB81230FA8C004C991E /* Button Background@2x.png */; };
+		4EC80FBC1230FA8C004C991E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC80FB91230FA8C004C991E /* Icon@2x.png */; };
+		4EC80FBD1230FA8C004C991E /* Life View Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC80FBA1230FA8C004C991E /* Life View Background@2x.png */; };
+		4EC80FC81231024A004C991E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC80FC71231024A004C991E /* Default@2x.png */; };
 		4EF915D911D4AF5100B30C1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF915D811D4AF5100B30C1F /* Default.png */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +53,10 @@
 		4E063B3011D3C25700B10433 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4E731C3611E75CB3002A162D /* GXGesturedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXGesturedButton.h; sourceTree = "<group>"; };
 		4E731C3711E75CB3002A162D /* GXGesturedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXGesturedButton.m; sourceTree = "<group>"; };
-		4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flipside Dark Gradient.png"; sourceTree = "<group>"; };
+		4EC80FB81230FA8C004C991E /* Button Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Background@2x.png"; sourceTree = "<group>"; };
+		4EC80FB91230FA8C004C991E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4EC80FBA1230FA8C004C991E /* Life View Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Life View Background@2x.png"; sourceTree = "<group>"; };
+		4EC80FC71231024A004C991E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4EF915D811D4AF5100B30C1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4EF915FD11D4B3C800B30C1F /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Thueyts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Thueyts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -139,11 +145,14 @@
 			children = (
 				4EF915FD11D4B3C800B30C1F /* Entitlements.plist */,
 				4EF915D811D4AF5100B30C1F /* Default.png */,
+				4EC80FC71231024A004C991E /* Default@2x.png */,
 				4E063A6211D3965900B10433 /* Icon.png */,
+				4EC80FB91230FA8C004C991E /* Icon@2x.png */,
 				4E01C20011D13336001DF924 /* App Background.png */,
 				4E01C1D411D128FE001DF924 /* Button Background.png */,
-				4E89523111ECC2E800B23D81 /* Flipside Dark Gradient.png */,
+				4EC80FB81230FA8C004C991E /* Button Background@2x.png */,
 				4E01C1D111D11C13001DF924 /* Life View Background.png */,
+				4EC80FBA1230FA8C004C991E /* Life View Background@2x.png */,
 				8D1107310486CEB800E47090 /* Thueyts-Info.plist */,
 			);
 			name = Resources;
@@ -226,7 +235,10 @@
 				4E01C20111D13336001DF924 /* App Background.png in Resources */,
 				4E063A6311D3965900B10433 /* Icon.png in Resources */,
 				4EF915D911D4AF5100B30C1F /* Default.png in Resources */,
-				4E89523211ECC2E800B23D81 /* Flipside Dark Gradient.png in Resources */,
+				4EC80FBB1230FA8C004C991E /* Button Background@2x.png in Resources */,
+				4EC80FBC1230FA8C004C991E /* Icon@2x.png in Resources */,
+				4EC80FBD1230FA8C004C991E /* Life View Background@2x.png in Resources */,
+				4EC80FC81231024A004C991E /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
