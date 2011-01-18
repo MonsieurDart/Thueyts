@@ -3,7 +3,7 @@
 //  Thueyts
 //
 //  Created by Mathieu Godart on 21/06/10.
-//  Copyright Coolsand 2010. All rights reserved.
+//  Copyright L'atelier du mobile 2010. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -71,12 +71,6 @@
 
     self.gameRunning = NO;
     [self resetGameState];
-}
-
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 }
 
 
@@ -268,9 +262,7 @@
 // Set the property, update the user interface launch the time counter and
 // prevent the device from going to sleep mode, if the game is running.
 - (void)setGameRunning:(BOOL)running {
-    
-//    if (running == gameRunning) return;
-    
+        
 	gameRunning = running;
     
     if (gameRunning) {
@@ -288,7 +280,6 @@
 
     [self setTimerRunning:gameRunning];
     CGFloat intensity = 0.1;
-    //[self wiggleView:startStopButton withIntensity:intensity];
     [self wiggleView:timerButton withIntensity:intensity];
 }
 
@@ -438,10 +429,8 @@
 
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
+    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc. that aren't in use.
 }
 
 
