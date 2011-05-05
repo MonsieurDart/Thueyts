@@ -31,6 +31,10 @@
     UILabel *opLifeRvView;
     UILabel *myLifeRvLabel;
     UILabel *opLifeRvLabel;
+    UILabel *myPoisonLabel;
+    UILabel *opPoisonLabel;
+    UILabel *myPoisonRvLabel;
+    UILabel *opPoisonRvLabel;
 
     GXGesturedButton *myLifeButton;
     GXGesturedButton *opLifeButton;
@@ -53,13 +57,21 @@
 
 @property (nonatomic) NSInteger myLife;
 @property (nonatomic) NSInteger opLife;
+@property (nonatomic) NSUInteger myPoisonMarkers;
+@property (nonatomic) NSUInteger opPoisonMarkers;
+
+@property (nonatomic, retain) IBOutlet UILabel *myLifeRvView;
+@property (nonatomic, retain) IBOutlet UILabel *opLifeRvView;
 
 @property (nonatomic, retain) IBOutlet UILabel *myLifeView;
 @property (nonatomic, retain) IBOutlet UILabel *opLifeView;
-@property (nonatomic, retain) IBOutlet UILabel *myLifeRvView;
-@property (nonatomic, retain) IBOutlet UILabel *opLifeRvView;
 @property (nonatomic, retain) IBOutlet UILabel *myLifeRvLabel;
 @property (nonatomic, retain) IBOutlet UILabel *opLifeRvLabel;
+
+@property (nonatomic, retain) IBOutlet UILabel *myPoisonLabel;
+@property (nonatomic, retain) IBOutlet UILabel *opPoisonLabel;
+@property (nonatomic, retain) IBOutlet UILabel *myPoisonRvLabel;
+@property (nonatomic, retain) IBOutlet UILabel *opPoisonRvLabel;
 
 @property (nonatomic, retain) IBOutlet GXGesturedButton *myLifeButton;
 @property (nonatomic, retain) IBOutlet GXGesturedButton *opLifeButton;
@@ -75,6 +87,8 @@
 - (IBAction)startStopGame;
 - (void)setGameRunning:(BOOL)running;
 
+- (IBAction)launchDice:(id)sender;
+
 - (void)setTimerRunning:(BOOL)running;
 - (void)updateTimerView;
 
@@ -85,6 +99,8 @@
 - (IBAction)doubleMyLife:(id)sender;
 - (IBAction)halveMyLife:(id)sender;
 - (IBAction)customizeMyLife:(NSInteger)life;
+- (IBAction)addMyPoisonMarker:(id)sender;
+- (IBAction)removeMyPoisonMarker:(id)sender;
 
 - (IBAction)increaseOpLife:(id)sender;
 - (IBAction)decreaseOpLife:(id)sender;
@@ -93,6 +109,8 @@
 - (IBAction)doubleOpLife:(id)sender;
 - (IBAction)halveOpLife:(id)sender;
 - (IBAction)customizeOpLife:(NSInteger)life;
+- (IBAction)addOpPoisonMarker:(id)sender;
+- (IBAction)removeOpPoisonMarker:(id)sender;
 
 - (void)wiggleView:(UIView *)aView withIntensity:(CGFloat)intensity;
 
