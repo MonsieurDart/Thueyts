@@ -34,7 +34,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ThueytsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThueytsAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* ThueytsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThueytsAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Thueyts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thueyts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Thueyts II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thueyts II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Thueyts.app */,
+				1D6058910D05DD3D006BFB54 /* Thueyts II.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Thueyts */ = {
+		1D6058900D05DD3D006BFB54 /* Thueyts II */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Thueyts" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Thueyts II" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -193,9 +193,9 @@
 			);
 			dependencies = (
 			);
-			name = Thueyts;
+			name = "Thueyts II";
 			productName = Thueyts;
-			productReference = 1D6058910D05DD3D006BFB54 /* Thueyts.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Thueyts II.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Thueyts */,
+				1D6058900D05DD3D006BFB54 /* Thueyts II */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
-				PRODUCT_NAME = Thueyts;
+				PRODUCT_NAME = "Thueyts II";
 			};
 			name = Debug;
 		};
@@ -287,7 +287,7 @@
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
-				PRODUCT_NAME = Thueyts;
+				PRODUCT_NAME = "Thueyts II";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -319,7 +319,7 @@
 				GCC_PREFIX_HEADER = Thueyts_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Thueyts-Info.plist";
-				PRODUCT_NAME = Thueyts;
+				PRODUCT_NAME = "Thueyts II";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "329CFD7A-C69A-4F18-95E6-9933A6E7CED2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Thueyts" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Thueyts II" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

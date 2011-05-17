@@ -89,6 +89,9 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
+    // Seed the random.
+    srand(time(NULL));
+    
     myLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
     opLifeRvView.transform = CGAffineTransformMakeRotation(M_PI);
     
@@ -137,6 +140,7 @@
 
 // Start the game if it is not running.
 - (void)checkGameStarted {
+	
     if (!self.gameRunning) [self startStopGame];
 }
 
@@ -386,9 +390,6 @@ NSString *poisonCounterToDots(NSUInteger counter) {
 
 // Launches a dice (between 0 and 6) and displays its result as an alert view.
 - (IBAction)launchDice:(id)sender {
-    
-    // Seed the random.
-    srand(time(NULL));
     
     NSString *diceResultMessage = [NSString stringWithFormat:@"Dice result %d.", 1 + rand() % 6];
     
