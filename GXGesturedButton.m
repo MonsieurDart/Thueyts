@@ -77,7 +77,7 @@
             break;
             
         default:
-            break;
+            return;
     }
 
     [recognizer release];
